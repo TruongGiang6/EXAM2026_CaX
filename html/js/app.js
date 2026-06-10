@@ -25,3 +25,7 @@ function renderTable() {
         tableBody.appendChild(row);
     });
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+    renderTable();
+});
