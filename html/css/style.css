@@ -18,3 +18,7 @@ body.bg-light-blue {
     background-color: #fce2e4;
     color: #dc3545;
 }
+
+.table>thead {
+    border-bottom: 2px solid #eee;
+}
