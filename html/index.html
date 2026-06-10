@@ -9,22 +9,81 @@
 </head>
 <body class="bg-light-blue">
     <div class="contaner my-4">
-      <div class="bg-primary text-white p-4 rounded-3 shadow-sm mb-4">
-        <h2 class="fw-bold mb-2">Quản lý danh sách sản phẩm</h2>
-        <p class="mb-0 text-light">Giao diện nhập liệu và hiển thị danh sách sản phẩm một cách trực quan, rõ ràng.</p>
-      </div>
-      
-              <div class="bg-primary text-white p-4 rounded-3 shadow-sm mb-4">
+        <div class="bg-primary text-white p-4 rounded-3 shadow-sm mb-4">
             <h2 class="fw-bold mb-2">Quản lý danh sách sản phẩm</h2>
             <p class="mb-0 text-light">Giao diện nhập liệu và hiển thị danh sách sản phẩm một cách trực quan, rõ ràng.</p>
         </div>
 
         <div class="row g-4">
             <div class="col-lg-4 col-md-5">
+                <div class="card border-0 shadow-sm h-100">
+                    <div class="card-body p-4">
+                        <h5 class="card-title fw-bold">Thêm sản phẩm mới</h5>
+                        <p class="text-muted small mb-4">Nhập đầy đủ thông tin để thêm sản phẩm vào danh sách.</p>
+                        
+                        <form id="productForm">
+                            <div class="mb-3">
+                                <label class="form-label fw-medium small">Tên sản phẩm</label>
+                                <input type="text" class="form-control" placeholder="Nhập tên sản phẩm">
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label class="form-label fw-medium small">Danh mục</label>
+                                <select class="form-select">
+                                    <option selected>-- Chọn danh mục --</option>
+                                    <option value="1">Điện thoại</option>
+                                    <option value="2">Máy tính bảng</option>
+                                    <option value="3">Laptop</option>
+                                    <option value="4">Phụ kiện</option>
+                                    <option value="5">Tai nghe</option>
+                                </select>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label class="form-label fw-medium small">Giá</label>
+                                <input type="number" class="form-control" placeholder="Nhập giá">
+                            </div>
+                            
+                            <div class="mb-4">
+                                <label class="form-label fw-medium small">Trạng thái còn hàng</label>
+                                <select class="form-select">
+                                    <option value="1" selected>Còn hàng</option>
+                                    <option value="0">Hết hàng</option>
+                                </select>
+                            </div>
+                            
+                            <div class="d-flex gap-2">
+                                <button type="button" class="btn btn-primary w-100">Thêm sản phẩm</button>
+                                <button type="reset" class="btn btn-outline-secondary w-100">Làm mới form</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+          </div>
 
-            </div>
-
-            <div class="col-lg-8 col-md-7">
+          <div class="col-lg-8 col-md-7">
+              <div class="card border-0 shadow-sm h-100">
+                    <div class="card-body p-4">
+                        <h5 class="card-title fw-bold">Danh sách sản phẩm</h5>
+                        <p class="text-muted small mb-4">Danh sách sản phẩm mẫu được hiển thị từ dữ liệu hệ thống.</p>
+                        
+                        <div class="table-responsive">
+                            <table class="table table-hover align-middle">
+                                <thead>
+                                    <tr class="text-secondary small">
+                                        <th scope="col">STT</th>
+                                        <th scope="col">TÊN SẢN PHẨM</th>
+                                        <th scope="col">DANH MỤC</th>
+                                        <th scope="col">GIÁ</th>
+                                        <th scope="col">TRẠNG THÁI</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="productTableBody">
+                                    </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
                 
             </div>
         </div>
