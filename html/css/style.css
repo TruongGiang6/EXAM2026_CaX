@@ -8,3 +8,13 @@ body.bg-light-blue {
     font-size: 12px;
     font-weight: 500;
 }
+
+.status-in-stock {
+    background-color: #d1f2e5;
+    color: #198754;
+}
+
+.status-out-stock {
+    background-color: #fce2e4;
+    color: #dc3545;
+}
